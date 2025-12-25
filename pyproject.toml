@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "claudecodemcp"
+version = "0.1.0"
+description = "FastMCP server wrapping the Claude Code CLI."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.20.0",
+    "pydantic>=2.0",
+]
+authors = [
+    { name = "guda.studio", email = "gudaclaude@gmail.com" },
+]
+license = { text = "MIT" }
+keywords = ["mcp", "fastmcp", "claude", "claude-code"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/GuDaStudio/claudecodemcp"
+
+[project.scripts]
+claudecodemcp = "claudecodemcp.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/claudecodemcp"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/claudecodemcp", "README.md", "LICENSE"]
