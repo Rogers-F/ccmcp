@@ -3,7 +3,7 @@ requires = ["hatchling>=1.25"]
 build-backend = "hatchling.build"
 
 [project]
-name = "claudecodemcp"
+name = "ccmcp"
 version = "0.1.0"
 description = "FastMCP server wrapping the Claude Code CLI."
 readme = "README.md"
@@ -25,13 +25,13 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/GuDaStudio/claudecodemcp"
+Homepage = "https://github.com/Rogers-F/ccmcp"
 
 [project.scripts]
-claudecodemcp = "claudecodemcp.cli:main"
+ccmcp = "ccmcp.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/claudecodemcp"]
+packages = ["src/ccmcp"]
 
 [tool.hatch.build.targets.sdist]
-include = ["src/claudecodemcp", "README.md", "LICENSE"]
+include = ["src/ccmcp", "README.md", "LICENSE"]

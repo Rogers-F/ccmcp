@@ -1,6 +1,6 @@
 """Console entry point for the Claude Code MCP server."""
 
-from claudecodemcp.server import run
+from ccmcp.server import run
 
 
 def main() -> None:

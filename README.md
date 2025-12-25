@@ -1,4 +1,4 @@
-# Claude Code MCP
+# Claude Code MCP (ccmcp)
 
 A FastMCP server that wraps the Claude Code CLI (`claude`) for seamless integration with MCP-compatible clients.
 
@@ -19,18 +19,18 @@ A FastMCP server that wraps the Claude Code CLI (`claude`) for seamless integrat
 
 ```bash
 # Install from source
-pip install git+https://github.com/GuDaStudio/claudecodemcp.git
+pip install git+https://github.com/Rogers-F/ccmcp.git
 
 # Or install locally
-git clone https://github.com/GuDaStudio/claudecodemcp.git
-cd claudecodemcp
+git clone https://github.com/Rogers-F/ccmcp.git
+cd ccmcp
 pip install -e .
 ```
 
 ### Add to Claude Code
 
 ```bash
-claude mcp add claude-code -s user --transport stdio -- uvx --from git+https://github.com/GuDaStudio/claudecodemcp.git claudecodemcp
+claude mcp add ccmcp -s user --transport stdio -- uvx --from git+https://github.com/Rogers-F/ccmcp.git ccmcp
 ```
 
 ## Tool Parameters
